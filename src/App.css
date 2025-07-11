@@ -380,27 +380,42 @@ footer {
   margin-top: 40px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
     text-align: center;
+    padding: 40px 20px;
   }
 
-  .nav-links {
-    display: none;
+  .left, .right {
+    width: 100%;
   }
 
   .right {
     margin-top: 30px;
   }
 
-  .about-wrapper {
+  .navbar {
     flex-direction: column;
-    padding: 30px;
+    align-items: flex-start;
   }
 
-  .about-left, .about-right {
-    flex: 1 1 100%;
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
   }
 }
