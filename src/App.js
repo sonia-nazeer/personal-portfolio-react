@@ -1,10 +1,7 @@
-// src/App.js
 import React from 'react';
 import './App.css';
-
-// Import components
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Profile from './components/Profile';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
@@ -15,12 +12,14 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
-      <Footer />
+      <main>
+        <Profile />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+        <Footer />
+      </main>
     </>
   );
 }

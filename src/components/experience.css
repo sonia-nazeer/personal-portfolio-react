@@ -1,0 +1,57 @@
+/* Add spacing above the experience section */
+.experience-section {
+  background-color:#f2f6f9;
+  padding: 100px 30px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+ 
+}
+
+/* Keep rest of your styles same */
+.experience-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #004d40;
+}
+
+.experience-table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.experience-table thead {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.experience-table th,
+.experience-table td {
+  padding: 18px 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.experience-table tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 50px 20px;
+  }
+
+  .experience-section h2 {
+    font-size: 28px;
+  }
+
+  .experience-table th,
+  .experience-table td {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+}

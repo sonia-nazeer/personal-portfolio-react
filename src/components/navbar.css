@@ -1,0 +1,109 @@
+.navbar {
+  background-color: #e0f7fa;
+    display: flex;
+        width: 100%;
+      
+        top: 0;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+}
+
+.logo img {      
+  width: 150px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-nav .nav-link {
+  text-decoration: none;
+        color: #030202;
+        font-weight: 600;
+        font-size: 16px;
+        transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff5722;
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: row; /* Keep logo and toggle in row */
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  /* Mobile menu container */
+  .navbar-collapse {
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    overflow: hidden; /* For rounded corners */
+    max-height: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  /* Expanded state */
+  .navbar-collapse.show {
+    max-height: 500px; /* Adjust based on content height */
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    color: #333 !important;
+    padding: 8px 15px;
+  }
+
+  /* Toggle button styling */
+  .navbar-toggler {
+    margin-left: auto;
+    border: none;
+    padding: 5px;
+  }
+
+  /* X icon transformation */
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: none;
+    position: relative;
+    height: 24px;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before,
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    top: 50%;
+    left: 0;
+    transform-origin: center;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: rotate(-45deg);
+  }
+}
+
+

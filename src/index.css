@@ -1,13 +1,230 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e0f7fa;
+  overflow-x: hidden;
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: row; /* Keep logo and toggle in row */
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  /* Mobile menu container */
+  .navbar-collapse {
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    overflow: hidden; /* For rounded corners */
+    max-height: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  /* Expanded state */
+  .navbar-collapse.show {
+    max-height: 500px; /* Adjust based on content height */
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    color: #333 !important;
+    padding: 8px 15px;
+  }
+
+  /* Toggle button styling */
+  .navbar-toggler {
+    margin-left: auto;
+    border: none;
+    padding: 5px;
+  }
+
+  /* X icon transformation */
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: none;
+    position: relative;
+    height: 24px;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before,
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    top: 50%;
+    left: 0;
+    transform-origin: center;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: rotate(-45deg);
+  }
+  #profile {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  #profile .left h1 {
+    font-size: 32px;
+  }
+
+  #profile .left h2 {
+    font-size: 20px;
+  }
+
+  #profile .left p {
+    font-size: 16px;
+  }
+
+  .profile-img img {
+    width: 250px; /* Smaller width */
+    height: auto; /* Auto height to keep aspect ratio */
+    aspect-ratio: 500/640; /* Same ratio as large screen */
+    border-radius: 105px; /* HALF of original (210px/2) to maintain oval shape */
+    outline-offset: 10px; /* Adjust offset for smaller size */
+  
+  }
+
+  .about-section {
+    padding: 50px 20px;
+  }
+
+  .about-wrapper {
+    padding: 30px 20px;
+  }
+
+  .about-left h2, .about-right h2 {
+    font-size: 28px;
+  }
+
+  .about-left p, .about-right ul li {
+    font-size: 16px;
+  }
+
+  .experience-section {
+    padding: 50px 20px;
+  }
+
+  .experience-section h2 {
+    font-size: 28px;
+  }
+
+  .experience-table th,
+  .experience-table td {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .projects-section {
+    padding: 50px 20px;
+  }
+
+  .projects-section h2 {
+    font-size: 28px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-card h3 {
+    font-size: 20px;
+  }
+
+  .project-card p {
+    font-size: 15px;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    padding: 30px 5%;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
+  }
+
+  .contact-left h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .contact-right {
+    padding: 20px;
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    font-size: 14px;
+  }
+
+  .social-links h3 {
+    text-align: center;
+  }
+
+  .social-links li {
+    font-size: 14px;
+  }
+
+  #footer {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+}
+@media (max-width: 480px) {
+  .container,
+  .row,
+  .col,
+  .col-md-6,
+  .col-lg-5,
+  .project-card,
+  .about-wrapper,
+  .about-left,
+  .about-right,
+  .contact-left,
+  .contact-right,
+  #profile .left {
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
 }
