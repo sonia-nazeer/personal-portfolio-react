@@ -104,37 +104,4 @@
 .contact-right button:hover {
   background-color: #1c2d48;
 }
-@media (max-width: 768px) {
-  
-  .contact-section {
-    flex-direction: column;
-    padding: 30px 5%;
-  }
 
-  .contact-left, .contact-right {
-    width: 100%;
-  }
-
-  .contact-left h1 {
-    font-size: 28px;
-    text-align: center;
-  }
-
-  .contact-right {
-    padding: 20px;
-  }
-
-  .contact-right input,
-  .contact-right textarea {
-    font-size: 14px;
-  }
-
-  .social-links h3 {
-    text-align: center;
-  }
-
-  .social-links li {
-    font-size: 14px;
-  }
-
-}

@@ -39,19 +39,3 @@
 .experience-table tr:nth-child(even) {
   background-color: #f4f4f4;
 }
-@media (max-width: 768px) {
-  .experience-section {
-    padding: 50px 20px;
-  }
-
-  .experience-section h2 {
-    font-size: 28px;
-  }
-
-  .experience-table th,
-  .experience-table td {
-    font-size: 14px;
-    padding: 12px;
-  }
-
-}

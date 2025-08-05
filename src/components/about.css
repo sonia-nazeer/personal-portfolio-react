@@ -43,20 +43,3 @@
   position: relative;
   color: #555;
 }
-@media (max-width: 768px) {
-  .about-section {
-    padding: 50px 20px;
-  }
-
-  .about-wrapper {
-    padding: 30px 20px;
-  }
-
-  .about-left h2, .about-right h2 {
-    font-size: 28px;
-  }
-
-  .about-left p, .about-right ul li {
-    font-size: 16px;
-  }
-}
