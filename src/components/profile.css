@@ -1,3 +1,4 @@
+
 #profile .left h2 {
   font-size: 30px;
   color: #444;
@@ -13,6 +14,7 @@
 
 #profile .left p {
   font-size: 20px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -50,4 +52,86 @@
      outline: 1px solid rgba(95, 93, 93, 0.838); 
   outline-offset: 20px;   
 
+}
+@media (max-width: 465px) {
+  #profile .left {
+    text-align: center;
+  }
+  
+  #profile .left h2 {
+    font-size: 20px;
+  }
+
+  #profile .left h1 {
+    font-size: 28px;
+  }
+
+  #profile .left p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .profile-img img {
+    width: 250px;
+    outline-offset: 10px;
+  }
+}
+
+/* Tablets (466px - 991px) */
+@media (min-width: 466px) and (max-width: 991px) {
+   #profile .left {
+    text-align: center;
+  }
+  
+  #profile .left h2 {
+    font-size: 24px;
+  }
+
+  #profile .left h1 {
+    font-size: 36px;
+  }
+
+  #profile .left p {
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 11px 22px;
+    font-size: 15px;
+  }
+
+  .profile-img img {
+    width: 350px;
+    outline-offset: 15px;
+  }
+}
+
+/* Large Screens (≥ 1200px) */
+@media (min-width: 1200px) {
+  #profile .left h2 {
+    font-size: 30px;
+  }
+
+  #profile .left h1 {
+    font-size: 48px;
+  }
+
+  #profile .left p {
+    font-size: 20px;
+  }
+
+  .button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .profile-img img {
+    width: 480px;
+    outline-offset: 20px;
+  }
 }

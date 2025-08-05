@@ -1,7 +1,7 @@
 .about-section {
   background-color: #f2f6f9;
   padding: 100px 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .about-wrapper {
@@ -28,7 +28,7 @@
 .about-right h2 {
   font-size: 38px;
   margin-bottom: 20px;
-  color: #333;
+  color: #004d40;
 }
 
 .about-right ul {
