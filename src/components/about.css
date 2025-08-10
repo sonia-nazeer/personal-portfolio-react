@@ -1,11 +1,14 @@
 .about-section {
-  background-color: #f2f6f9;
+  /* background-color: #f2f6f9; */
   padding: 100px 30px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .about-wrapper {
   background: #fff;
+  outline: 1px solid rgba(95, 93, 93, 0.838);
+  outline-offset: 20px;
+   border-left: 3px solid #a6f7f7;
   padding: 50px;
   border-radius: 20px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);

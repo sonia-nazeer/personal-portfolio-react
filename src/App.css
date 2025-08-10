@@ -6,7 +6,8 @@
 
 html,body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #e0f7fa;
+  /* background-color: #e0f7fa; */
+  background: radial-gradient(#fff, #c7ecf1e0);
   overflow-x: hidden;
   color: #333;
 }

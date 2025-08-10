@@ -54,14 +54,22 @@
   margin-right: 30px;
   font-size: 18px;
 }
+.social-links a {
+  text-decoration: none;
+  color: #0f1b2a;
+  transition: color 0.3s;
+}
 
 .contact-right {
   flex: 1;
   min-width: 350px;
+  outline: 1px solid rgba(95, 93, 93, 0.838);
+  outline-offset: 20px;
   background: #ffffff;
   padding: 30px; /* reduced padding */
   border-radius: 60px; /* smaller radius */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
   align-self: center; /* vertically center */
 }
 
@@ -149,7 +157,18 @@
   .contact-right {
     min-width: 100%;
   }
-  
+  .contact-right {
+    outline-offset: 10px; /* or 0px if needed */
+    padding: 20px;
+    border-radius: 40px;
+  }
+    .contact-right input,
+  .contact-right textarea {
+    padding: 8px 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+ 
   .social-links li {
     max-width: 100%;
   }

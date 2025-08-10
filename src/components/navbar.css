@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #e0f7fa;
+  /* background-color: #e0f7fa; */
     display: flex;
         width: 100%;
       
@@ -42,7 +42,7 @@
 
   /* Mobile menu container */
   .navbar-collapse {
-    background-color: white;
+    /* background-color: rgba(255, 255, 255, 0.37); */
     margin-top: 10px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -55,6 +55,8 @@
   .navbar-collapse.show {
     max-height: 500px; /* Adjust based on content height */
     padding: 15px;
+      outline: 1px solid rgba(95, 93, 93, 0.838);
+  outline-offset: 10px;
   }
 
   .nav-links {
@@ -68,7 +70,7 @@
     color: #333 !important;
     padding: 8px 15px;
   }
-
+  
   /* Toggle button styling */
   .navbar-toggler {
     margin-left: auto;

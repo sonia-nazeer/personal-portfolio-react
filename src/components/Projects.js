@@ -27,6 +27,19 @@ function Projects() {
 
             <div  className="col-md-6 col-lg-5 mb-4">
               <article  className="project-card">
+                <h3>Ecommerce store</h3>
+                <video controls>
+                  <source src="../media/store.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <p>
+                  Responsive store website with product listings,offers section,testimonials, and contact form.
+                </p>
+              </article>
+            </div>
+
+            <div  className="col-md-6 col-lg-5 mb-4">
+              <article  className="project-card">
                 <h3>Portfolio Website</h3>
                 <video controls>
                   <source src="../media/projects.mp4" type="video/mp4" />
@@ -38,6 +51,20 @@ function Projects() {
                 </p>
               </article>
             </div>
+            <div  className="col-md-6 col-lg-5 mb-4">
+              <article  className="project-card">
+                <h3>Portfolio Website</h3>
+                <video controls>
+                  <source src="../media/portfolio.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <p>
+                  Responsive portfolio site with profile ,experience, projects, and
+                  contact form section.Built with Reactjs.
+                </p>
+              </article>
+            </div>
+            
           </div>
         </div>
     </section>
